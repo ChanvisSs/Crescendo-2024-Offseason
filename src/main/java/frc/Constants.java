@@ -1,9 +1,9 @@
-package frc.robot;
+package frc;
 
 import edu.wpi.first.math.util.Units;
 import frc.lib.Log;
 
-public class RobotMap {	
+public class Constants {	
 	/** Robot Size Parameters **************************************************/
 	public static final double TRACK_WIDTH = Units.inchesToMeters(19.5); // Distance between centers of right and left wheels on robot (in meters)
     public static final double WHEEL_BASE = Units.inchesToMeters(23.5); // Distance between centers of front and back wheels on robot (in meters)
@@ -62,7 +62,7 @@ public class RobotMap {
 	public static final double JOYSTICK_DRIVE_SCALE_LOW = 0.2; // Determines driving speed of the robot when in slow mode
 
 	/** Swerve Module Settings ************************************************/
-	public static final double kWheelDiameterMeters = Units.inchesToMeters(4); // Convert wheel diameter in inches to meters
+	public static final double kWheelCircumferenceMeters = Units.inchesToMeters(4) * Math.PI; // Convert wheel diameter in inches to meters
 	public static final double kDriveMotorGearRatio = 1 / 8.14; // Gear Ratio of the Drive Motor
 	public static final double kTurnMotorGearRatio = 1 / 12.8; // Gear Ratio of the Turning Motor
 	public static final double kDriveEncoderRot2Meter = kDriveMotorGearRatio * Math.PI * kWheelDiameterMeters; // Convert rotations to meters

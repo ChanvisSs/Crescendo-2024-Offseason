@@ -4,19 +4,18 @@ import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.TimeZone;
 
-import frc.robot.RobotMap;
-
+import frc.Constants;
 import frc.lib.Log;
 
 public class Log {
 	/** Configuration Constants ***********************************************/
-	private static final boolean USE_CONSOLE = RobotMap.LOG_TO_CONSOLE;
-	private static final boolean USE_FILE = RobotMap.LOG_TO_FILE;
-	private static final String FILE_FORMAT = RobotMap.LOG_FILE_FORMAT;
-	private static final String DIRECTORY_PATH = RobotMap.LOG_DIRECTORY_PATH;
-	private static final String TIME_ZONE = RobotMap.LOG_TIME_ZONE;
-	private static final String TIME_FORMAT = RobotMap.LOG_TIME_FORMAT;
-	private static final Level GLOBAL_LEVEL = RobotMap.LOG_GLOBAL;
+	private static final boolean USE_CONSOLE = Constants.LOG_TO_CONSOLE;
+	private static final boolean USE_FILE = Constants.LOG_TO_FILE;
+	private static final String FILE_FORMAT = Constants.LOG_FILE_FORMAT;
+	private static final String DIRECTORY_PATH = Constants.LOG_DIRECTORY_PATH;
+	private static final String TIME_ZONE = Constants.LOG_TIME_ZONE;
+	private static final String TIME_FORMAT = Constants.LOG_TIME_FORMAT;
+	private static final Level GLOBAL_LEVEL = Constants.LOG_GLOBAL;
 	
 	/** List of Logging Levels ************************************************/
 	public static enum Level {
